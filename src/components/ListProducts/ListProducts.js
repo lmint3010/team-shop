@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
-import './ListProduct.css';
+import './ListProducts.css';
 
-class ListProduct extends Component {
+class ListProducts extends Component {
     render() {
         return (
             <Container>
@@ -83,4 +83,4 @@ class ListProduct extends Component {
     }
 }
 
-export default ListProduct;
+export default ListProducts;
