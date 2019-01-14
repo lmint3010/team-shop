@@ -4,8 +4,7 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption,
-  Button
+  CarouselCaption
 } from 'reactstrap';
 
 import './Carousel.css';
@@ -28,7 +27,7 @@ const items = [
   }
 ];
 
-class Example extends Component {
+class CarouselComp extends Component {
   constructor(props) {
     super(props);
     this.state = { activeIndex: 0 };
@@ -86,6 +85,7 @@ class Example extends Component {
         activeIndex={activeIndex}
         next={this.next}
         previous={this.previous}
+        className="carousel-custom"
       >
         <CarouselIndicators className = "indi" items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
         {slides}
@@ -104,4 +104,4 @@ const slideStyle = {
 }
 
 
-export default Example;
+export default CarouselComp;

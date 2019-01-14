@@ -1,9 +1,10 @@
 .topbrands{
-    padding:30px 10px;
+    padding: 18px 8px;
     background: #fff;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+    margin-top: 2rem;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, .12);
 }
 
-.topbrands >img{
-    width: 100%;
+.topbrands img {
+    height: 26px;
 }

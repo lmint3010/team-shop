@@ -9,6 +9,8 @@ import {
     Container
 } from 'reactstrap';
 
+import './Menu.css';
+
 class Menu extends React.Component {
     constructor(props) {
         super(props);
@@ -25,7 +27,7 @@ class Menu extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="main-menu">
                 <Navbar style = {navStyle} color="light" light expand="md">
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
