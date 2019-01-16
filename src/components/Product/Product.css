@@ -49,6 +49,9 @@
 }
 
 .block-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

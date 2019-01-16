@@ -20,7 +20,7 @@ class Product extends Component {
                             </div>
                         </Col>
                         <Col xs="6" sm="6" md="6" lg="6">
-                            <div className="block-image" style={{backgroundImage: 'url("https://cdn.tgdd.vn/Products/Images/42/74110/iphone-7-32gb-den-400x460.png")'}}>
+                            <div className="block-image" style={{backgroundImage: 'url("https://cdn.fptshop.com.vn/Uploads/Mediums/2015/9/23/635785957077892156_z5-compact.png")'}}>
                             </div>
                         </Col>
                     </Row>
