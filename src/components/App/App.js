@@ -8,7 +8,7 @@ import Carousel from '../Carousel/Carousel';
 import TopBrands from '../TopBrands/TopBrands';
 
 // Team CSS
-import './App.css';
+import './App.scss';
 //12312312321
 const App = () => {
   return (
