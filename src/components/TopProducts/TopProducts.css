@@ -1,13 +1,18 @@
+.super-lightblue {
+    background-color: #fbfcff;
+}
+
 .wrapper {
-    border-radius: 3px;
-    box-shadow: 1px 1px 1px 1px #ccc;
     padding: 10px;
+    margin: 1rem 0;
+    border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     position: relative;
-    margin-bottom: 15px;
+    background-color: white;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, .12);
 }
 .sale {
     position: absolute;
@@ -20,7 +25,7 @@
     color: #fff;
 }
 .item {
-    padding: 10px;
+    padding: 12px;
 }
 .image {
     background-color: #e8dfdf;
@@ -44,20 +49,34 @@
     margin-top: 10px;
     border: none;
     background-color: #fff;
-    text-align: left;
+    text-align: right;
 }
 .subtitle {
     margin: 0;
-    color: #ccc;
-    font-size: 16px;
+    color: rgb(155, 155, 155);
+    font-size: 14px;
 }
 .title {
     margin: 0;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 400;
 }
 .price {
     margin: 0;
-    color: #af7f25;
+    color: #0fdf8f;
+    font-weight: 600;
     margin-bottom: 5px;
+}
+
+.add2card {
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 12px;
+    font-size: 13px;
+    margin-top: .5rem;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: dodgerblue;
+    box-shadow: 1px 2px 10px rgba(30, 143, 255, 0.584);
 }

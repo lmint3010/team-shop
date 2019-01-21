@@ -1,86 +1,35 @@
-import React, { Component } from 'react';
-import { Container, Row, Col, Button } from 'reactstrap';
+import React from 'react';
+import { Container, Row } from 'reactstrap';
+import ListItem from './ListItem/ListItem';
 import './ListProducts.css';
 
-class ListProducts extends Component {
-    render() {
-        return (
-            <Container className="list-products-container">
-                <Row>
-                    <Col xs="6" sm="6" md="4" lg="4">
-                        <div className="product mb-10">
-                                <Row className="p-4" >
-                                    <Col xs="6" sm="6" md="6" lg="6" className="d-flex">
-                                        <div >
-                                            <h2>
-                                                Product
-                                            </h2>
-                                            <p>
-                                                Get 20% cash back
-                                            </p>
-                                            <Button color="success" size="md" className="mb-10">Buy Now</Button>
-                                        </div>
-                                    </Col>
-                                    <Col xs="6" sm="6" md="6" lg="6">
-                                        <div className="block-image" >
-                                            <img src="http://blogs-images.forbes.com/gordonkelly/files/2016/11/Screenshot-2016-11-05-at-15.13.00.png"
-                                            alt="iphone" />
-                                        </div>
-                                    </Col>
-                                </Row>
-                        </div>
-                    </Col>
-                    <Col xs="6" sm="6" md="4" lg="4">
-                        <div className="product mb-10">
-                                <Row className="p-4" >
-                                    <Col xs="6" sm="6" md="6" lg="6" className="d-flex">
-                                        <div>
-                                            <h2>
-                                                Product
-                                            </h2>
-                                            <p>
-                                                Get 20% cash back
-                                            </p>
-                                            <Button color="success" size="md" className="mb-10">Buy Now</Button>
-                                        </div>
-                                    </Col>
-                                    <Col xs="6" sm="6" md="6" lg="6">
-                                        <div className="block-image" >
-                                            <img src="http://blogs-images.forbes.com/gordonkelly/files/2016/11/Screenshot-2016-11-05-at-15.13.00.png"
-                                            alt="iphone" />
-                                        </div>
-                                    </Col>
-                                </Row>
-                        </div>
-                    </Col>
-                    <Col xs="6" sm="6" md="4" lg="4">
-                        <div className="product mb-10">
-                                <Row className="p-4" >
-                                    <Col xs="6" sm="6" md="6" lg="6" className="d-flex">
-                                        <div>
-                                            <h2>
-                                                Product
-                                            </h2>
-                                            <p>
-                                                Get 20% cash back
-                                            </p>
-                                            <Button color="success" size="md" className="mb-10">Buy Now</Button>
-                                        </div>
-                                    </Col>
-                                    <Col xs="6" sm="6" md="6" lg="6">
-                                        <div className="block-image" >
-                                            <img src="http://blogs-images.forbes.com/gordonkelly/files/2016/11/Screenshot-2016-11-05-at-15.13.00.png"
-                                            alt="iphone" />
-                                        </div>
-                                    </Col>
-                                </Row>
-                        </div>
-                    </Col>
-                             
-                </Row>
-           </Container>
-        );
+// Fake Data - Tạm thời, sau này đưa lên API sau
+const products = [
+    { 
+        brand: "iPhone",
+        thumbnail: "http://hoangphat360.vn/uploads/products/464890/iphone_x_64gb_chinh_hang.jpg",
+        saleOff: '20%'
+    },
+    { 
+        brand: "Samsung",
+        thumbnail: "https://blog.clickbuy.shop/wp-content/uploads/2018/10/samsung-galaxy.jpg",
+        saleOff: '40%'
+    },
+    { 
+        brand: "Xiaomi",
+        thumbnail: "https://www.miespaña.com/10103-large_default/xiaomi-mi-8-6-go-256-go-bleu.jpg",
+        saleOff: '35%'
     }
+];
+
+const ListProducts = () =>  {
+    return (
+        <Container className="list-products-container">
+            <Row>
+                {products.map((p, i) => <ListItem key={i}  product={p} />)}
+            </Row>
+        </Container>
+    );
 }
 
 export default ListProducts;

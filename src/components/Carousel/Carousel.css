@@ -1,0 +1,23 @@
+.carousel-custom {
+    margin-top: 4rem;
+}
+
+.caption {
+    color : #000 !important;
+    right: 55% !important;
+    bottom: 50% !important;
+    left: auto !important;
+
+}
+
+.btn{
+    position: fixed;
+    top: 45%;
+    left: 40%;
+}
+.box{
+    height: 413px !important;
+}
+.indi{
+   background-color: #000 !important;
+}
