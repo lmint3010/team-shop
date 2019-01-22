@@ -1,6 +1,9 @@
 .carousel-custom {
     margin-top: 4rem;
 }
+.carousel-item .carousel-caption {
+    z-index: 1;
+}
 
 .caption {
     color : #000 !important;
