@@ -38,11 +38,11 @@
     right: 100%;
     bottom: 0;
     top: calc(100% - 4px);
-    background-color: #535b71;
+    background-color: #f31156;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
     -ms-transition: all .4s ease;
@@ -64,7 +64,7 @@
     min-width: 250px;
     opacity: 0;
     pointer-events: none;
-    background-color: rgba(247, 214, 214, 0.2);
+    background-color: #fff;
     -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.2);
             box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.2);
     transition: all .4s ease;
@@ -130,7 +130,7 @@
     -o-transition: all .5s ease;
 }
 .wrapper-categories {
-    background-color: rgba(247, 214, 214, 0.2);
+    background-color: #fff;
     font-size: 0;
     padding: 30px;
     box-shadow: 1px 1px 5px 1px #b79999;
