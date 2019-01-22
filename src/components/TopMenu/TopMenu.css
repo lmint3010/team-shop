@@ -41,12 +41,12 @@
     background-color: #f31156;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -ms-transition: all .4s ease;
-    -o-transition: all .4s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
 }
 .ps-topmenu .link:hover::before {
     right: 0;
@@ -67,11 +67,11 @@
     background-color: #fff;
     -webkit-box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.2);
             box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.2);
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -ms-transition: all .4s ease;
-    -o-transition: all .4s ease;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
 }
 .ps-topmenu .ps-submenu li {
     display: block;
