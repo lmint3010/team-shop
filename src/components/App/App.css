@@ -46,29 +46,34 @@
 }
 .menu-fixed .ps-topmenu > li > .link {
   color: #fff;
+  pointer-events: auto;
 }
 .visible {
   opacity: 1;
 }
 .top-flex {
-  display: flex;
-  align-items: center;
+  position: relative;
+  pointer-events: none;
 }
 .top-logo {
-  display: flex;
-  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   max-width: 250px;
-  position: relative;
-  z-index: 10;
+  pointer-events: auto;
 }
 .top-logo img {
-  display: block;
   width: 100%;
   height: auto;
 }
 .top-nav {
   text-align: right;
-  flex-grow: 1;
+  width: 100%;
 }
 @keyframes App-logo-spin {
   from {
