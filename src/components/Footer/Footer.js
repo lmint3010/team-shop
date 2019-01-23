@@ -3,7 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 
 import "./Footer.scss";
 
-const imgCards = '/Image/ImageBrands/cards.png'
+const imgCards = '/Images/ImageBrands/cards.png'
 
 class Footer extends Component {
   render() {
