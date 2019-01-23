@@ -16,7 +16,7 @@ const App = () => {
         <div className="App">
             <div className="menu-fixed">
                 <Container>
-                    <div className="flex">
+                    <div className="top-flex">
                         <div className="top-logo">
                             <a href="\#" title="logo">
                                 <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="logo-phones-shope" />
