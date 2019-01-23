@@ -40,7 +40,10 @@
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
-  z-index: 1;
+  z-index: 2;
+}
+.menu-fixed .ps-topmenu > li > .link {
+  color: #fff;
 }
 .visible {
   opacity: 1;
