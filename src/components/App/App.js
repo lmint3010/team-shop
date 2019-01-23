@@ -2,12 +2,12 @@ import React from 'react';
 
 // Team Components
 import Menu from '../Menu/Menu'
-import ListProducts from '../ListProducts/ListProducts';
-import TopProducts from '../TopProducts/TopProducts';
-import Carousel from '../Carousel/Carousel';
-import TopBrands from '../TopBrands/TopBrands';
-import TopMenu from '../TopMenu/TopMenu';
-
+import ListProducts from '../ListProducts/ListProducts'
+import TopProducts from '../TopProducts/TopProducts'
+import Carousel from '../Carousel/Carousel'
+import TopBrands from '../TopBrands/TopBrands'
+import TopMenu from '../TopMenu/TopMenu'
+import Footer from '../Footer/Footer'
 // Team CSS
 import './App.css';
 //12312312321
@@ -20,6 +20,7 @@ const App = () => {
             <ListProducts />
             <TopProducts />
             <TopBrands/>
+            <Footer/>
         </div>
     );
 }
