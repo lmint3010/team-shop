@@ -30,3 +30,6 @@ a {
 a:hover {
   text-decoration: none !important;
 }
+.carousel {
+  z-index: -1;
+}
