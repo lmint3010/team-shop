@@ -7,6 +7,7 @@ import TopProducts from '../TopProducts/TopProducts';
 import Carousel from '../Carousel/Carousel';
 import TopBrands from '../TopBrands/TopBrands';
 import TopMenu from '../TopMenu/TopMenu';
+import Header from '../Header/Header';
 
 // Team CSS
 import './App.css';
@@ -14,6 +15,7 @@ import './App.css';
 const App = () => {
     return (
         <div className="App">
+            <Header/>
             {/* <Menu/> */}
             <TopMenu />
             <Carousel/>
