@@ -33,8 +33,8 @@ class Header extends Component {
                                         <Col xs="9" md="9" lg="9" className="ps-row-item">
                                             <p>Black Smartphone</p>
                                             <span>$1352.23</span>
-                                            <div class="ps-row-item-manage">
-                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <div className="ps-row-item-manage">
+                                            <i className="fa fa-trash" aria-hidden="true"></i>
                                             </div>
                                         </Col> 
                                     </Row>
@@ -45,8 +45,8 @@ class Header extends Component {
                                         <Col xs="9" md="9" lg="9" className="ps-row-item">
                                             <p>Smart Speaker</p>
                                             <span>$446.60</span>
-                                            <div class="ps-row-item-manage">
-                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <div className="ps-row-item-manage">
+                                            <i className="fa fa-trash" aria-hidden="true"></i>
                                             </div>
                                         </Col> 
                                     </Row>
@@ -57,8 +57,8 @@ class Header extends Component {
                                         <Col xs="9" md="9" lg="9" className="ps-row-item">
                                             <p>Smart Glasses</p>
                                             <span>$321.15</span>
-                                            <div class="ps-row-item-manage">
-                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <div className="ps-row-item-manage">
+                                            <i className="fa fa-trash" aria-hidden="true"></i>
                                             </div>
                                         </Col> 
                                     </Row>
@@ -81,8 +81,8 @@ class Header extends Component {
                                     <Col xs="9" md="9" lg="9" className="ps-row-item">
                                         <p>Black Smartphone</p>
                                         <span>$1352.23</span>
-                                        <div class="ps-row-item-manage">
-                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <div className="ps-row-item-manage">
+                                        <i className="fa fa-trash" aria-hidden="true"></i>
                                         </div>
                                     </Col> 
                                 </Row>
