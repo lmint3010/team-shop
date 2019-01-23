@@ -21,6 +21,6 @@
 .box{
     height: 413px !important;
 }
-.indi{
-   background-color: #000 !important;
+.carousel-indicators > li{
+   background-color:rgba(0, 0, 0, .35) !important;
 }

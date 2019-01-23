@@ -4,10 +4,10 @@ import { Container, Row, Col } from "reactstrap";
 import "./TopBrands.css";
 
 const brands = [
-  '/Image/ImageBrands/client-logo-1.png',
-  '/Image/ImageBrands/client-logo-2.png',
-  '/Image/ImageBrands/client-logo-3.png',
-  '/Image/ImageBrands/client-logo-4.png'
+  '/images/ImageBrands/client-logo-1.png',
+  '/images/ImageBrands/client-logo-2.png',
+  '/images/ImageBrands/client-logo-3.png',
+  '/images/ImageBrands/client-logo-4.png'
 ];
 
 class TopBrands extends Component {

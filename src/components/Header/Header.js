@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 
 import './Header.scss'
-const imgUrl = '/Image/ImageBrands/logo.png'
-const imgUser = '/Image/ImageBrands/log-in-user.jpg'
-const imgCart1 = '/Image/ImageBrands/g-2-a.jpg'
-const imgCart2 = '/Image/ImageBrands/g-5-a.jpg'
-const imgCart3 = '/Image/ImageBrands/a-5-a.jpg'
+const imgUrl = '/Images/ImageBrands/logo.png'
+const imgUser = '/Images/ImageBrands/log-in-user.jpg'
+const imgCart1 = '/Images/ImageBrands/g-2-a.jpg'
+const imgCart2 = '/Images/ImageBrands/g-5-a.jpg'
+const imgCart3 = '/Images/ImageBrands/a-5-a.jpg'
 
 class Header extends Component {
     render() {

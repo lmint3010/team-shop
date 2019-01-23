@@ -12,8 +12,9 @@
     bottom: 0;
     left: -9999px;
     right: -9999px;
-    -webkit-box-shadow: 1px 1px 5px 1px #b99696;
-            box-shadow: 1px 1px 5px 1px #b99696;
+    -webkit-box-shadow: 1px 2px 3px #b99696;
+            box-shadow: 1px 2px 3px #b99696;
+    pointer-events: none;
     z-index: -1;
 }
 .ps-topmenu li {
@@ -41,12 +42,12 @@
     background-color: #f31156;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
 }
 .ps-topmenu .link:hover::before {
     right: 0;
@@ -61,17 +62,17 @@
     position: absolute;
     top: 100%;
     left: 40px;
-    min-width: 250px;
+    min-width: 220px;
     opacity: 0;
     pointer-events: none;
     background-color: #fff;
     -webkit-box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.2);
             box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.2);
-    transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
 }
 .ps-topmenu .ps-submenu li {
     display: block;
@@ -123,11 +124,11 @@
     -moz-transform: scale(0.5);
     -ms-transform: scale(0.5);
     -o-transform: scale(0.5);
-    transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
     z-index: 2;
 }
 .wrapper-categories {
