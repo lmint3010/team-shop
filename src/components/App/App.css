@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  font-family: Roboto;
+  font-size: 16;
 }
 
 .App-logo {
@@ -26,6 +28,53 @@
   min-width: 90% !important;
 }
 
+
+.menu-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #293199;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  z-index: 2;
+}
+.menu-fixed .ps-topmenu > li > .link {
+  color: #fff;
+  pointer-events: auto;
+}
+.visible {
+  opacity: 1;
+}
+.top-flex {
+  position: relative;
+  pointer-events: none;
+}
+.top-logo {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  max-width: 250px;
+  pointer-events: auto;
+}
+.top-logo img {
+  width: 100%;
+  height: auto;
+}
+.top-nav {
+  text-align: right;
+  width: 100%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

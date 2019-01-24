@@ -1,6 +1,9 @@
 .carousel-custom {
     margin-top: 4rem;
 }
+.carousel-item .carousel-caption {
+    z-index: 1;
+}
 
 .caption {
     color : #000 !important;
@@ -18,6 +21,6 @@
 .box{
     height: 413px !important;
 }
-.indi{
-   background-color: #000 !important;
+.carousel-indicators > li{
+   background-color:rgba(0, 0, 0, .35) !important;
 }

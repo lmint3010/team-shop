@@ -87,7 +87,7 @@ class CarouselComp extends Component {
         previous={this.previous}
         className="carousel-custom"
       >
-        <CarouselIndicators className = "indi" items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
         {slides}
         <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
         <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />

@@ -1,0 +1,191 @@
+.ps-topmenu {
+    font-size: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+}
+.ps-topmenu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -9999px;
+    right: -9999px;
+    -webkit-box-shadow: 1px 2px 3px #b99696;
+            box-shadow: 1px 2px 3px #b99696;
+    pointer-events: none;
+    z-index: -1;
+}
+.ps-topmenu li {
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.ps-topmenu .link {
+    padding: 15px;
+    display: block;
+    font-size: .9rem;
+    color: #000;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+}
+.ps-topmenu .link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    top: calc(100% - 4px);
+    background-color: #f31156;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.ps-topmenu .link:hover::before {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.ps-topmenu li:hover > .link {
+    background-color: #ea6464;
+    color: #fff;
+}
+.ps-topmenu .ps-submenu {
+    position: absolute;
+    top: 100%;
+    left: 40px;
+    min-width: 220px;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.2);
+            box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.2);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.ps-topmenu .ps-submenu li {
+    display: block;
+    position: relative;
+}
+.ps-topmenu  li:hover > .ps-submenu {
+    left: 0;
+    opacity: 1;
+    pointer-events: auto;
+}
+.ps-topmenu .ps-submenu .link::before {
+    content: none;
+}
+.ps-topmenu .ps-submenu .ps-submenu {
+    left: 100%;
+    top: 0;
+}
+.ps-topmenu .ps-submenu li:hover > .ps-submenu {
+    left: 100%;
+}
+
+/* ============= */
+.ps-mega-product {
+    position: static !important;
+}
+.ps-topmenu .ps-mega-product .link::before {
+    content: none;
+}
+.ps-mega-product:hover .categories {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.categories {
+    position: absolute;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    margin: 0 50px;
+    font-size: 0;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.3);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    z-index: 2;
+}
+.wrapper-categories {
+    background-color: #fff;
+    font-size: 0;
+    padding: 30px;
+    box-shadow: 1px 3px 5px 1px #b79999;
+}
+.column-4 {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+.widgets {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.widgets .widget-title {
+    position: relative;
+}
+.widgets .widget-title h2 {
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+}
+.widgets .widget-title::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    bottom: -1px;
+    right: 0;
+    background-color: #ddd;;
+}
+.widgets .widget-title + .widget-content {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.widgets .widget-content .ps-link-product {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    padding: 5px 5px 5px 15px;
+    display: block;
+}
+.widget-content .item {
+    position: relative;
+    display: block; 
+    padding: 0;
+}
+.widget-content .item::before {
+    content: "-";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
