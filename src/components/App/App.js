@@ -12,7 +12,6 @@ import Footer from '../Footer/Footer'
 
 // Team CSS
 import './App.css';
-//adsoaksdfkoasdkfa
 const App = () => {
     return (
         <div className="App">
