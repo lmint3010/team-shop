@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Row, Col } from "reactstrap";
 
 import './Header.scss'
 const imgUrl = '/Images/ImageBrands/logo.png'
