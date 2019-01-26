@@ -8,8 +8,8 @@ import Carousel from '../Carousel/Carousel';
 import TopBrands from '../TopBrands/TopBrands';
 import TopMenu from '../TopMenu/TopMenu';
 import Header from '../Header/Header';
-import Footer from '../Footer/Footer'
-
+import Footer from '../Footer/Footer';
+import Subcribe from '../Subcribe/Subcribe';
 // Team CSS
 import './App.css';
 const App = () => {
@@ -39,6 +39,7 @@ const App = () => {
             <ListProducts />
             <TopProducts />
             <TopBrands/>
+            <Subcribe/>
             <Footer/>
         </div>
     );
