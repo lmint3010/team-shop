@@ -1,0 +1,32 @@
+.sortby {
+  display: flex;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+}
+
+.sort-by-status {
+  text-align: right;
+  flex-grow: 1;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.sortby h5 {
+  text-align: left;
+  margin: 1.5rem 0;
+  font-size: 18px;
+}
+
+select {
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  font-size: 12px;
+  padding: 6px 12px;
+  width: 120px;
+  color: rgba(0, 0, 0, .8);
+  border: 1px solid rgba(0, 0, 0, .06);
+  margin-right: 12px;
+  border-radius: 4px;
+}
