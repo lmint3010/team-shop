@@ -1,0 +1,68 @@
+.card-product {
+  background-color: white;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, .18);
+  position: relative;
+}
+
+.card-image img {
+  max-width: 100%;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-like {
+  position: absolute;
+  right: 1.4rem;
+  top: 1.4rem;
+  color: gray;
+  font-size: 26px;
+  cursor: pointer;
+  transition: 100ms ease-out;
+}
+
+.card-like:hover, .card-like.active {
+  color: tomato;
+}
+
+.card-content {
+  text-align: left;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, .08);
+  padding: 1.4rem 1rem;
+  position: relative;
+}
+
+.card-title {
+  color: rgba(0, 0, 0, .8);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  margin: .5rem 0;
+}
+
+.card-price {
+  font-size: 18px;
+  text-shadow: .8px .8px 1px rgba(60, 179, 114, 0.275);
+  color: mediumseagreen;
+  margin: 0;
+}
+
+.card-buying {
+  background-color: dodgerblue;
+  padding: 1rem;
+  font-size: 26px;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: -25px;
+  right: 1rem;
+  transition: 120ms ease-in-out;
+}
+
+.card-product:hover .card-buying {
+  top: -35px;
+}

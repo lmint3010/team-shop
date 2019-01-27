@@ -1,0 +1,6 @@
+.categoryList {
+  margin: 1rem 0 4rem 0;
+  display: grid;
+  grid-gap: 1.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
