@@ -1,14 +1,10 @@
 import React from "react";
 import { Container } from "reactstrap";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 //Team module
 import { routes, RouteWithSubRoutes } from '../../Route/Route';
 // Team Components
-import ListProducts from "../ListProducts/ListProducts";
-import TopProducts from "../TopProducts/TopProducts";
-import Carousel from "../Carousel/Carousel";
-import TopBrands from "../TopBrands/TopBrands";
 import TopMenu from "../TopMenu/TopMenu";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -42,13 +38,9 @@ const App = () => {
           <TopMenu />
         </Container>
       </div>
-      <Carousel />
       {routes.map((route, i) => (
           <RouteWithSubRoutes key={i} {...route} />
       ))}
-      <ListProducts />
-      <TopProducts />
-      <TopBrands />
       <Footer />
     </div>
     </Router>

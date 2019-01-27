@@ -1,7 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Link, Switch, Route} from "react-router-dom";
+import {Link} from "react-router-dom";
 import "./TopMenu.css";
-import Categories from '../Categories/Categories';
 
 const TopMenu = () => {
   return (

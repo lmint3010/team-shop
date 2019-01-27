@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Route } from "react-router-dom";
-import App from "../components/App/App";
 
 import Categories from "../components/Categories/Categories";
 import Shop from "../components/Shop/Shop";
@@ -9,8 +8,14 @@ import Accessories from "../components/Accessories/Accessories";
 import Pages from "../components/Pages/Pages";
 import Session from "../components/Session/Session";
 import ContactUs from "../components/Contact-us/ContactUs";
+import Index from "../components/Home/Home";
 
 const routes = [
+  {
+    path: "/",
+    component: Index,
+    exact: true
+  },
   {
     path: "/shop",
     component: Shop,
@@ -47,6 +52,7 @@ function RouteWithSubRoutes(route) {
   return (
     <Route
       path={route.path}
+      exact={route.exact}
       render={props => <route.component {...props} routes={route.routes} />}
     />
   );
