@@ -2,7 +2,7 @@
 import axios from 'axios'
 
 const LOCAL_API_BASE_URL = 'https://coders-tokyo-shop-api.herokuapp.com'
-const API_GET_LISTPRODUCTS = LOCAL_API_BASE_URL + '/product'
+const API_GET_LISTPRODUCTS = LOCAL_API_BASE_URL + '/api/products'
 
 export const getListProducts =  (success, error) => {
     const url = API_GET_LISTPRODUCTS
