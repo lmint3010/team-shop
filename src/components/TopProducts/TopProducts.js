@@ -35,6 +35,7 @@ class TopProducts extends Component {
     return (
       <Container className="super-lightblue">
         <CSSTransitionGroup>
+          <h2 className="top-product-title">Top Products</h2>
           <Row>{renderListProducts()}</Row>
         </CSSTransitionGroup>
       </Container>
