@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { Container } from "reactstrap";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -11,40 +11,53 @@ import Footer from "../Footer/Footer";
 // Team CSS
 import "./App.css";
 
-const App = () => {
-  return (
-    <Router>
-    <div className="App">
-      <Header />
-      <div className="menu-fixed">
-        <Container>
-          <div className="top-flex">
-            <div className="top-logo">
-              <a href="\#" title="logo">
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/logo.png`}
-                  alt="logo-phones-shope"
-                />
-              </a>
+class App extends Component {
+  componentDidMount() {
+    let topmenu = document.querySelector('.menu-fixed');
+    let menu = document.querySelector('.main-menu');
+    window.addEventListener('scroll', function() {
+        if(window.pageYOffset > menu.offsetTop + 50) {
+            topmenu.classList.add('visible');
+        } else {
+            topmenu.classList.remove('visible');
+        }
+    })
+  }
+  render () {
+    return (
+      <Router>
+      <div className="App">
+        <Header />
+        <div className="menu-fixed">
+          <Container>
+            <div className="top-flex">
+              <div className="top-logo">
+                <a href="\#" title="logo">
+                  <img
+                    src={`${process.env.PUBLIC_URL}/images/logo.png`}
+                    alt="logo-phones-shope"
+                  />
+                </a>
+              </div>
+              <div className="top-nav">
+                <TopMenu />
+              </div>
             </div>
-            <div className="top-nav">
-              <TopMenu />
-            </div>
-          </div>
-        </Container>
+          </Container>
+        </div>
+        <div className="main-menu text-left">
+          <Container>
+            <TopMenu />
+          </Container>
+        </div>
+        {routes.map((route, i) => (
+            <RouteWithSubRoutes key={i} {...route} />
+        ))}
+        <Footer />
       </div>
-      <div className="main-menu text-left">
-        <Container>
-          <TopMenu />
-        </Container>
-      </div>
-      {routes.map((route, i) => (
-          <RouteWithSubRoutes key={i} {...route} />
-      ))}
-      <Footer />
-    </div>
-    </Router>
-  );
-};
+      </Router>
+    )
+  }
+}
 
 export default App;
