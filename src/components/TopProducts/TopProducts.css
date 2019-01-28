@@ -35,7 +35,6 @@
     content: '';
     display: block;
     padding-top: 128%;
-    background: red;
 }
 .image img {
     position: absolute;

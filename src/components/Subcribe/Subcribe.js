@@ -7,7 +7,7 @@ class Subcribe extends Component {
     return (
       <div className="ps-subcribe">
         <div className="ps-contactIcon">
-          <icon
+          <i
             className="fa fa-check-square"
             style={{ fontSize: "40px", lineHeight: "100px" }}
           />
@@ -24,7 +24,7 @@ class Subcribe extends Component {
               <form>
                 <div className="ps-formwrap">
                   <div className="ps-group">
-                    <input
+                    <i
                       type="text"
                       className="ps-contactInput"
                       onFocus={this.onFocus}
@@ -34,8 +34,8 @@ class Subcribe extends Component {
                     <label>Name</label>
                   </div>
                   <button type="submit" className="ps-contactSubmit">
-                    <icon
-                      className="fa fa-share-square white"
+                    <i
+                      className="fa fa-paper-plane white"
                       style={{ fontSize: "30px" }}
                     />
                   </button>
