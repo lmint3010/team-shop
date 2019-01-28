@@ -3,7 +3,7 @@ import { Col } from 'reactstrap';
 
 import '../TopProducts.css';
 
-const Product = () => {
+const Product = ({propsDetail}) => {
   return (
     <Col xs="4" md="4" sm="3" lg="3">
       <div className="wrapper">
@@ -12,13 +12,13 @@ const Product = () => {
               </div>
           <div className="item">
               <div className="image">
-                  <img src="https://media.wired.com/photos/5b22c5c4b878a15e9ce80d92/master/pass/iphonex-TA.jpg"
+                  <img src={propsDetail.img}
                   alt="product" />
               </div>
-              <div className="__product">
-                  <p className="subtitle">Jeans</p>
-                  <h3 className="title">Vintage Jean</h3>
-                  <p className="price">$18.75</p>
+              <div className="top-product">
+                  <p className="subtitle">Apple</p>
+                  <h3 className="title">{propsDetail.name}</h3>
+                  <p className="price">$ {propsDetail.price}</p>
                   <button className="add2card">Add To Cart</button>
               </div>
           </div>

@@ -12,8 +12,8 @@
     bottom: 0;
     left: -9999px;
     right: -9999px;
-    -webkit-box-shadow: 1px 2px 3px #b99696;
-            box-shadow: 1px 2px 3px #b99696;
+    -webkit-box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+            box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
     pointer-events: none;
     z-index: -1;
 }

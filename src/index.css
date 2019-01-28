@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
   overflow-x: hidden;
 }
 
@@ -29,6 +30,9 @@ a {
 }
 a:hover {
   text-decoration: none !important;
+}
+:focus {
+  outline: 0;
 }
 .carousel {
   z-index: -1;
