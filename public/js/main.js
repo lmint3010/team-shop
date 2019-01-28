@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function() {
     let topmenu = document.querySelector('.menu-fixed');
     let menu = document.querySelector('.main-menu');
@@ -27,3 +28,5 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
 })
+=======
+>>>>>>> edit-task
