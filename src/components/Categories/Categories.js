@@ -5,6 +5,7 @@ import ShowResults from './ShowResults/ShowResults';
 
 import SortBy from './SortBy/SortBy';
 import CategoryList from './CategoryList/CategoryList';
+import CategoriesWidget from './CategoriesWidget/CategoriesWidget';
 import './Categories.scss';
 
 const Categories = () => (
@@ -13,6 +14,7 @@ const Categories = () => (
             <Col lg="3">
                 <SearchProducts />
                 <ShowResults/>
+                <CategoriesWidget/>
             </Col>
             <Col lg="9">
               <SortBy />

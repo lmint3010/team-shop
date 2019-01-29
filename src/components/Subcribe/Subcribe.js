@@ -24,9 +24,9 @@ class Subcribe extends Component {
               <form>
                 <div className="ps-formwrap">
                   <div className="ps-group">
-                    <i
+                    <input
                       type="text"
-                      className="ps-contactInput"
+                      className="ps-contactInput sub-input"
                       onFocus={this.onFocus}
                       required
                     />

@@ -63,7 +63,7 @@ p {
 .bar:after {
   right:50%; 
 }
-input{
+.sub-input{
     font-size:18px;
     background: transparent;
     display:block;
@@ -71,7 +71,7 @@ input{
     border:none;
     border-bottom:1px solid #fff;
 }
-input:focus{ 
+.sub-input:focus{ 
     outline:none; 
 }
 label{
@@ -86,7 +86,7 @@ label{
     -moz-transition:0.2s ease all; 
     -webkit-transition:0.2s ease all;
 }
-input:focus ~ label, input:valid ~ label {
+.sub-input:focus ~ label, .sub-input:valid ~ label {
     top:-20px;
     left: 0px;
     font-size:14px;
